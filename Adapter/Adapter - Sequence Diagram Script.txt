@@ -1,0 +1,15 @@
+# https://www.websequencediagrams.com/
+title Padrão Adapter
+
+Cliente->Adaptador:métodoInterface()
+note right of Adaptador:
+traduzir parâmetros
+end note
+Adaptador->Adaptador:
+Adaptador->Implementação:métodoImplementação()
+Implementação-->Adaptador:
+note right of Adaptador:
+traduzir resultado
+end note
+Adaptador->Adaptador:
+Adaptador-->Cliente:

@@ -1,0 +1,8 @@
+# https://www.websequencediagrams.com/
+title Padrão Observer
+
+Observador->Sujeito: registrarObservador(this)
+Cliente->Sujeito: setEstado()
+Sujeito->Sujeito: notificar()
+Sujeito->Observador: atualizar()
+Observador->Sujeito: removerObservador(this)

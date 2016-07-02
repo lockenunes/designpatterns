@@ -1,0 +1,11 @@
+# https://www.websequencediagrams.com/
+title Padrão Template Method
+
+Cliente->Classe Concreta:1 : métodoModelo()
+Classe Concreta->Classe Abstrata: 2 : métodoModelo()
+Classe Abstrata->Classe Concreta:3 : operaçãoPrimitivaA()
+Classe Concreta-->Classe Abstrata:4 : resultado
+Classe Abstrata->Classe Concreta:5 : operaçãoPrimitivaB()
+Classe Concreta-->Classe Abstrata:6 : resultado
+Classe Abstrata-->Classe Concreta:7 : resultado final
+Classe Concreta-->Cliente:8 :resultado final

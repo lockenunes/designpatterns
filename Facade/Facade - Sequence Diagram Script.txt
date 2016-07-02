@@ -1,0 +1,9 @@
+# https://www.websequencediagrams.com/
+Cliente->Fachada:métodoFachada()
+Fachada->Classe1:método1()
+Classe1-->Fachada:
+Fachada->Classe2:método2()
+Classe2-->Fachada:
+Fachada->Classe3:método3()
+Classe3-->Fachada:
+Fachada-->Cliente:

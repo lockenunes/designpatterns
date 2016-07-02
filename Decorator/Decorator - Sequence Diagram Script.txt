@@ -1,0 +1,14 @@
+# https://www.websequencediagrams.com/
+title Padrão Decorator
+
+Cliente->Componente Decorador:1 : operaçãoA()
+Componente Decorador->Componente Decorador:2 : comportamentoCustomizadoA()
+Componente Decorador->Componente:3 :operaçãoA()
+Componente-->Componente Decorador:
+note left of Componente:
+4 : resultado
+end note
+Componente Decorador-->Cliente:
+note left of Componente Decorador
+5 : resultado
+end note

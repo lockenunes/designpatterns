@@ -1,0 +1,16 @@
+# https://www.websequencediagrams.com/
+
+title Padrão Strategy
+
+Cliente->Contexto:1 : operação(Estrategia estrategia)
+Contexto->Contexto:2 : preProcessamento()
+Contexto->EstrategiaConcreta:3 : algoritmoImplementação()
+EstrategiaConcreta-->Contexto:
+note left of EstrategiaConcreta:
+4 : resultado
+end note
+Contexto->Contexto:5 : posProcessamento()
+Contexto-->Cliente:
+note left of Contexto:
+6 : resultado
+end note
