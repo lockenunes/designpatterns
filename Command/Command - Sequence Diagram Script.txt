@@ -1,0 +1,7 @@
+# https://www.websequencediagrams.com/
+Title Padrão Comando
+Cliente-->Receptor:1: new
+Cliente-->Comando:2: new(receptor)
+Cliente->Invocador:3: executar(comando)
+Invocador->Comando:3.1: executar()
+Comando->Receptor:3.2: ação()
