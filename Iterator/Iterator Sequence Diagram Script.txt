@@ -1,0 +1,8 @@
+# https://www.websequencediagrams.com/
+Title Iterador
+Cliente->MenuDeSobremesas: criarIterador()
+MenuDeSobremesas-->IteradorDeMenu: new(MenuDeSobremesas)
+Cliente->IteradorDeMenu: próximo()
+IteradorDeMenu->MenuDeSobremesas: getItem(posicao+1)
+MenuDeSobremesas-->IteradorDeMenu: Item de Sobremesa
+IteradorDeMenu-->Cliente: Item de Sobremesa
