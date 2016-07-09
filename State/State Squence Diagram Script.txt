@@ -1,0 +1,11 @@
+# https://www.websequencediagrams.com/
+Title Estado
+ConexaoSegura->EstadoDaConexao: requisitarConexão()
+EstadoDaConexao->ConexaoFechada: abrir()
+ConexaoFechada-->EstadoDaConexao: conexão estabelecida
+EstadoDaConexao-->ConexaoSegura: conexão estabelecida
+ConexaoSegura-->EstadoDaConexao: new(ConexaoAberta)
+ConexaoSegura->EstadoDaConexao: requisitarConexão()
+EstadoDaConexao->ConexaoAberta: abrir()
+ConexaoAberta-->EstadoDaConexao: conexão negada(limite 1)
+EstadoDaConexao-->ConexaoSegura: conexão negada(limite 1)
