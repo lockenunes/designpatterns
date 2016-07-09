@@ -1,0 +1,12 @@
+# https://www.websequencediagrams.com/
+Title Composto(Composite)
+Cliente->PáginaComposta: renderizar()
+PáginaComposta->CabecalhoSimples: renderizar()
+CabecalhoSimples-->PáginaComposta: cabeçalho renderizado
+PáginaComposta->ConteudoComposto: renderizar()
+ConteudoComposto->TextoSimples: renderizar()
+TextoSimples-->ConteudoComposto: texto renderizado
+ConteudoComposto->BordaSimples: renderizar()
+BordaSimples-->ConteudoComposto: borda renderizada
+ConteudoComposto-->PáginaComposta: conteúdo renderizado
+PáginaComposta-->Cliente: página completa renderizada
