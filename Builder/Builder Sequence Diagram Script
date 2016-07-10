@@ -1,0 +1,11 @@
+# https://www.websequencediagrams.com/
+# Cliente->Proxy: operação()
+# https://www.websequencediagrams.com/
+Title Construtor (Builder)
+Cliente-->ConstrutorConcreto: new ConstrutorConcreto
+Cliente-->Diretor: new Diretor(ConstrutorConcreto)
+Cliente->Diretor: construir()
+Diretor->ConstrutorConcreto: construirParteA()
+Diretor->ConstrutorConcreto: construirParteB()
+Diretor->ConstrutorConcreto: construirParteC()
+Cliente->ConstrutorConcreto: getResultado()
