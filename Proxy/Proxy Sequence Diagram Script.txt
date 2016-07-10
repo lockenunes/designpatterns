@@ -1,0 +1,6 @@
+# https://www.websequencediagrams.com/
+Title Proxy
+Cliente->Proxy: operação()
+Proxy->SujeitoReal: operação()
+SujeitoReal-->Proxy:
+Proxy-->Cliente:
