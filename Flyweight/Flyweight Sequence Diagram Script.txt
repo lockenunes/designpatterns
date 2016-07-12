@@ -1,0 +1,8 @@
+# https://www.websequencediagrams.com/
+Title Flyweight
+Cliente->FlyweightFábrica: getFlyweight()
+FlyweightFábrica->FlyweightFábrica: flyweight = buscarFlyweight()
+FlyweightFábrica->Flyweight: [flyweight não encontrado] new()
+Flyweight-->FlyweightFábrica: flyweight
+FlyweightFábrica-->Cliente: flyweight
+Cliente->Flyweight: operação(estadoExtrínseco)
