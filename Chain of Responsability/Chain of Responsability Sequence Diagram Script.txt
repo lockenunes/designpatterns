@@ -1,0 +1,6 @@
+# https://www.websequencediagrams.com/
+Title Cadeia de Responsabilidade
+Cliente->PrimeiroDaCadeia: lidar(requisição)
+PrimeiroDaCadeia->SegundaDaCadeia: lidar(requisição)
+SegundaDaCadeia-->PrimeiroDaCadeia: requisição tratada
+PrimeiroDaCadeia-->Cliente: requisição tratada

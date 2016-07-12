@@ -1,0 +1,4 @@
+Title Ponte (Bridge)
+Cliente-->Abstração: new (imp)
+Cliente->Abstração: operação()
+Abstração->Implementação: imp.operaçãoImp()
