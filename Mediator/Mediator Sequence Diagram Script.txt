@@ -1,0 +1,6 @@
+# https://www.websequencediagrams.com/
+Title Mediador (Mediator)
+Cliente->ListaDeOpções: escolherOpção(posição)
+ListaDeOpções-->ListaDeOpções: novo item selecionado
+ListaDeOpções->MediadorDeColaboradores: colaboradorAlterado(this)
+MediadorDeColaboradores->CampoDeTexto: setTexto()
