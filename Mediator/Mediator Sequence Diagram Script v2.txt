@@ -1,0 +1,7 @@
+Title Mediador (Mediator)
+LutaMediador->LutadorA: getPontosDeAtaque()
+LutadorA-->LutaMediador:
+LutaMediador->LutadorB: getPontosDeDefesa()
+LutadorB-->LutaMediador:
+LutaMediador->LutaMediador: calcularDano()
+LutaMediador->LutadorB: setDano()

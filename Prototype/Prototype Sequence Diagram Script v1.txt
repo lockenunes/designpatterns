@@ -1,0 +1,5 @@
+# https://www.websequencediagrams.com/
+Title Protótipo (Prototype)
+Cliente->FábricaDeProtótipos: getProtótipo (tipoA)
+FábricaDeProtótipos->ProtótipoA: clone()
+ProtótipoA-->Cliente:

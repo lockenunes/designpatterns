@@ -1,0 +1,9 @@
+# https://www.websequencediagrams.com/
+Title Protótipo (Prototype)
+Jogador->JogoEngine: iniciarJogo()
+JogoEngine-->ProtótipoDeSoldado: cria protótipo
+JogoEngine-->ProtótipoDeTanque: cria protótipo
+Jogador->JogoEngine: criarPartida()
+JogoEngine->JogoEngine:getInimigos()
+JogoEngine->ProtótipoDeSoldado: clone()
+JogoEngine->ProtótipoDeTanque: clone()
